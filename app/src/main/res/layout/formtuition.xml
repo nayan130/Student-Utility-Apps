@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/feeRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Fees"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_span="2"
+            android:background="@color/display_color"
+
+            />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Enter Tuition Fee per Credit:"
+                    android:gravity="center_horizontal" />
+
+                <EditText
+                    android:id="@+id/crFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="0.00"
+                    ></EditText>
+
+
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Total Credit:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/creNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="0.0"
+
+                    ></EditText>
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Retake or thesis/project credit:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/creOth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="0"
+
+                    ></EditText>
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your waiver amount"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/wavTk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="0"
+                    ></EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registration fees:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/regFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="0"
+
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extra fee:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/othFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="0"
+
+                    ></EditText>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/feeCount"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_state"
+            android:shadowColor="@color/dark_blue"
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
